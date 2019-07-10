@@ -58,6 +58,9 @@ header{
 .top-contact i{
 	padding-right: 10px;
 }
+.social-media i:hover{
+	color: #ffffff;
+}
 .top-header .social-media {
 	margin-left: 30px;
 	display: inline-block;
@@ -120,7 +123,9 @@ header{
 	margin-top: 100px;
 }
 .bn-first{
+	font-family: FuturalT-Book;
 	font-size: 30px;
+	line-height:2.4 ;
 }
 .bn-second{
 	font-family: FuturalT-Bold;
@@ -174,9 +179,10 @@ header{
 	margin-bottom: 20px;
 }
 .ct-basic{
-	font-family: Futural-Book;
+	font-family: FuturalT-Book;
 	color: rgb(72, 72, 72);
 	font-size: 16px;
+	line-height: 1.6;
 }
 
 .btn-AC{
@@ -332,16 +338,9 @@ header{
 .grid-container {
   display: grid;
 }
-
-.grid-item {
-  
-}
-
-.item1 {
-	
+.item1 {	
   grid-column: 1 ;
   grid-row: 1/ span 2;
-	margin-right: 3px;
 }
 
 .item3 {
@@ -351,20 +350,18 @@ header{
 .item2 {
   grid-column: 2;
   grid-row: 1 ;
-	margin-right: 3px;
+	margin: 0px 8px;
 }
 .item4{
-	margin-right: 3px;
+	margin: 8px;
 }
-.item4 img{
+.item5{
 	margin-top: 8px;
 }
-.item5 img{
-	margin-top: 8px;
-}
+
 .Customer-reviews{
 	width: 1400px;
-	height: 810px;
+	height: 862px;
 	background: url("../image/Layer 17.jpg") no-repeat;
 }
 .CR{
@@ -408,18 +405,18 @@ header{
 	margin: 15px auto;
 }
 .foot-CR{
-	height: 136px;
+	height: 177px;
 	background: #ffcb0f;
-	opacity: 0.8
+	opacity: 0.9;
 }
 .nav{
 	width: 1400px;
-	height: 40px;
+	height: 50px;
 	background: #5d6066;
 }
 .left-foot-CR{
 	width: 550px;
-	margin: 30px 0px;
+	margin: 40px 0px;
 	display: inline-block
 }
 .ct-foot-CR1{
@@ -437,7 +434,7 @@ header{
 	width: 600px;
 	display: inline-block;
 	vertical-align:top;
-	margin: 30px 0px;
+	margin: 40px 0px;
 }
 .form-control1{
 	width: 270px;
@@ -446,14 +443,13 @@ header{
 	border-radius: 5px;
 	margin: 0px 10px;
 	padding-left: 9px;
+	outline: none;
 } 
 
 .bot-right-foot-CR{
 	margin-top: 10px;
 }
-.btn-FT{
-	
-}
+
 .form-control{
 	width: 450px;
 	height: 35px;
@@ -461,6 +457,7 @@ header{
 	border-radius: 5px;
 	margin: 0px 10px;
 	padding-left: 9px;
+	outline: none;
 }
 footer{
 	width: 1400px;
@@ -488,7 +485,7 @@ footer .container-footer{
 	padding: 20px;
 }
 .items-footer-about{
-	max-width: 400px;
+	width: 350px;
 	margin-right: 30px;
 	padding-right: 40px;
 		
@@ -569,9 +566,17 @@ footer .container-footer{
 }
 .ct-ft2{
 	font-family: FuturalT-Book;
-	font-size: 14px;
+	font-size: 16px;
 	color: #ffffff;
-	margin: 2px 0px;
+	line-height: 1.6;
+}
+.ct-latest-number{
+	font-size: 18px;
+	line-height: 1.4;
+}
+.ct-latest-word{
+	font-size: 12px;
+	line-height: 1;
 }
 .ct-ft2 i{
 	margin-right: 20px;
@@ -591,4 +596,7 @@ footer .container-footer{
 	width: 100px;
 	height: 35px;
 	border-radius: 5px;
+}
+.ct-nav-last{
+	font-family: FuturalT-Book;
 }
