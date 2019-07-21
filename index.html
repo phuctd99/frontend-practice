@@ -52,7 +52,13 @@
             </div>
 		</div>
         </header>
-		<div class="Main-Banner">
+		<div class="Main-Banner" >
+			<div class="bg-slide" >
+				<img src="image/Layer 9.jpg" alt=""/>
+				<img src="image/img-banner-1.jpeg" alt=""/>
+				<img src="image/img-banner-2.jpg" alt=""/>
+			</div>
+			
 			<div class="container">
 			<div class="Banner-Content">
 				<p class="bn-first">We are Certified Engineers</p>
@@ -175,13 +181,47 @@
 			</div>
 			<div class="MWL">
 				<div class="grid-container">
-					<div class="grid-item item1"><img src="image/Layer 10.png" alt=""/></div>
-					<div class="grid-item item2"><img src="image/Layer 11.png" alt=""/></div>
-					<div class="grid-item item3"><img src="image/Layer 14.png" alt=""/></div>  
-					<div class="grid-item item4"><img src="image/Layer 12.png" alt=""/></div>
-					<div class="grid-item item5"><img src="image/Layer 13.png" alt=""/></div>
+					<div class="grid-item item1"><img src="image/Layer 10.png" alt="" onclick="openModal()"/></div>
+					<div class="grid-item item2"><img src="image/Layer 11.png" alt="" onclick="openModal()"/></div>
+					<div class="grid-item item3"><img src="image/Layer 14.png" alt="" onclick="openModal()"/></div>  
+					<div class="grid-item item4"><img src="image/Layer 12.png" alt="" onclick="openModal()"/></div>
+					<div class="grid-item item5"><img src="image/Layer 13.png" alt="" onclick="openModal()"/></div>
 				</div>
-				</div>
+				<div id="myModal" class="modal">
+  					<span class="close cursor" onclick="closeModal()">&times;</span>
+  					<div class="modal-content">
+
+    			<div class="mySlides">
+      				<div class="numbertext">1 / 5</div>
+      				<img src="image/Layer 10.png" style="width:100%">
+    			</div>
+
+    			<div class="mySlides">
+      				<div class="numbertext">2 / 5</div>
+      				<img src="image/Layer 11.png" style="width:100%">
+    			</div>
+
+    			<div class="mySlides">
+      				<div class="numbertext">3 / 5</div>
+      			<img src="image/Layer 14.png" style="width:100%">
+    			</div>
+    
+    			<div class="mySlides">
+      				<div class="numbertext">4 / 5</div>
+      				<img src="image/Layer 12.png" style="width:100%">
+    			</div>
+						
+    			<div class="mySlides">
+      				<div class="numbertext">5 / 5</div>
+      				<img src="image/Layer 13.png" style="width:100%">
+    			</div>
+						
+    			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  				</div>
+			</div>
+			</div>
 			</div>
 		</div>
 		<div class="Customer-reviews">
@@ -192,14 +232,14 @@
 			</div>
 			<div class="CR">
 				<div class="col-CR">
-					<div class="ct-col-CR">
-						<img id="image" src="image/talk1.1.png" alt=""/>
+					<div class="ct-col-CR cr1">
+						<img id="image" src="image/talk1.1.png" alt="" />
 						<p class="ct-basic" id="talk1">Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit
 							</p>
 					</div>
 					
-					<div class="image-CR">
-					<img class="img-CR" src="image/Layer 15.png" alt=""/>
+					<div class="image-CR" onclick="changeActive('div.ct-col-CR.cr1', '.col-CR-mid .ct-col-CR', 'div.ct-col-CR.cr3' )">
+					<img class="img-CR" src="image/Layer 15.png" alt="" />
 						<p class="ct-WCU1" style="font-size: 18px">JOHN SMITH</p>
 					</div>
 				</div>
@@ -210,20 +250,20 @@
 						</p>
 					</div>
 					
-					<div class="image-CR">
-					<img class="img-CR" src="image/Layer 7.png" alt=""/>
+					<div class="image-CR" onclick="changeActive('.col-CR-mid .ct-col-CR', 'div.ct-col-CR.cr1', 'div.ct-col-CR.cr3')">
+					<img class="img-CR" src="image/Layer 7.png" alt="" />
 						<p class="ct-WCU1" style="font-size: 18px">JOHN SMITH</p>
 					</div>
 				</div>
 				<div class="col-CR">
-					<div class="ct-col-CR">
+					<div class="ct-col-CR cr3">
 						<img id="image" src="image/talk1.1.png" alt=""/>
 						<p class="ct-basic" id="talk1">Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit
 							</p>
 					</div>
 					
-					<div class="image-CR">
-					<img class="img-CR" src="image/Layer 15.png" alt=""/>
+					<div class="image-CR" onclick="changeActive('div.ct-col-CR.cr3', '.col-CR-mid .ct-col-CR', 'div.ct-col-CR.cr1')">
+					<img class="img-CR" src="image/Layer 15.png" alt="" />
 						<p class="ct-WCU1" style="font-size: 18px">JOHN SMITH</p>
 					</div>
 				</div>
@@ -237,12 +277,12 @@
 				</div>
 				<div class="right-foot-CR">
 					<div class="top-right-foot-CR">
-						<input type="text" class="form-control1" placeholder=" Name" />
+						<input type="text" class="form-control1" placeholder=" Name"  />
 						<input type="text" class="form-control1" placeholder=" Email" />
 					</div>
 					<div class="bot-right-foot-CR">
 						<input type="text" class="form-control" placeholder=" Message" />
-						<button class="btn btn-FT"> <a href="#">SUBMIT</a></button>
+						<button class="btn btn-FT" onClick="return checkInputForm()" > <a >SUBMIT</a></button>
 					</div>
 				</div>
 					</div>
@@ -341,6 +381,6 @@
 			<div class="nav-last">
 				<p class="ct-nav-last">Copyright @ 2016 | Designed by <span style="color:#ffcb0f">PSDFreebies.com</span></p>
 			</div>
-			
+			<script src="JS/myScripts.js"></script>
     </body>
 </html>
