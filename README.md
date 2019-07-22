@@ -16,3 +16,9 @@ Thực hiện bởi [Trần Duy Phúc](https://github.com/phuctd99)
 
 - Tạo 1 trang html cơ bản từ PSD, không JS, không Responsive
 - Biết thêm về css, layout
+
+## So sánh giữa XMLHttpRequest vs Fetch
+- gist: https://gist.github.com/phuctd99/23b63b66efe350eecc412bbec353799d
+
+## Ví dụ đơn giản về Fetch api :
+- https://playcode.io/382849?tabs=script.js,preview,console
