@@ -19,3 +19,6 @@ Thực hiện bởi [Trần Duy Phúc](https://github.com/phuctd99)
 
 ## So sánh giữa XMLHttpRequest vs Fetch
 - gist: https://gist.github.com/phuctd99/23b63b66efe350eecc412bbec353799d
+
+## Ví dụ đơn giản về Fetch api :
+- https://playcode.io/382849?tabs=script.js,preview,console
