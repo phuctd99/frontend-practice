@@ -360,7 +360,10 @@ header{
 	font-family: FuturalT-Bold;
 	font-size: 25px;
 	color: #ffffff;
-	margin: 20px 0px;
+	margin: 20px auto;
+}
+.ct-MWL1.spe{
+	width: 250px;
 }
 .ct-MWL2{
 	font-family: Futural-Book;
