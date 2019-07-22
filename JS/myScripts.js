@@ -6,20 +6,15 @@ function background_slideshow(){
 		document.querySelector('.Main-Banner').style.backgroundImage = "url('image/Layer 9.jpg')";
 	}, 0000);
 	//
-	
-	
 	setTimeout(function(){
 		document.querySelector('.Main-Banner').style.backgroundImage = "url('image/img-banner-1.jpeg')";
 	}, 3000);
 	
 	//
-	
 	setTimeout(function(){
 		document.querySelector('.Main-Banner').style.backgroundImage = "url('image/img-banner-2.jpg')";
 	}, 6000);
 	};
-	
-	
 	slider();
 	setInterval(function() { // repeat
 
@@ -33,20 +28,20 @@ function background_slideshow(){
 
 
 //tao slideshow popup cho made-with-love
+var slideIndex = 1;
+showSlides(slideIndex);
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 function openModal(){
 	document.getElementById("myModal").style.display = "block";
 }
 function closeModal() {
   document.getElementById("myModal").style.display = "none";
 }
-var slideIndex = 1;
-showSlides(slideIndex);
-
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
-
-
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
@@ -58,7 +53,13 @@ function showSlides(n) {
   } 
   slides[slideIndex-1].style.display = "block";
 }
-
+// nhan vao overlay de thoat
+var modal  = document.querySelector('#myModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 
 //kiem tra du lieu cho form input
 function checkInputForm(){
@@ -70,13 +71,23 @@ function checkInputForm(){
 		alert('Ban can nhap ten');
 		return false;
 	}
-	else if( (/@gmail.com$/.test(email) == false) || (/\s+/.test(email) == true)){// Dang cua email ...@gmail.com
-		alert('Nhap sai email');
-		return false;
-	}
-	else if(message == null || message == ""){
-		alert('Ban can nhap noi dung cho message');
-		return false;
+	else{ 
+		if(email == null || email == ""){
+			alert("Ban can nhap email");
+			return false;
+		}
+		else{ 
+			if( (/@gmail.com$/.test(email) == false) || (/\s+/.test(email) == true)){// Dang cua email ...@gmail.com
+				alert('Nhap sai email');
+				return false;
+			}
+			else{ 
+				if(message == null || message == ""){
+				alert('Ban can nhap noi dung cho message');
+				return false;
+				}
+			}
+		}
 	}
 	alert('Chuc mung ban da nhap form dung');
 	return true;
