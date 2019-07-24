@@ -7,7 +7,7 @@ function background_slideshow(){
 	}, 0000);
 	//
 	setTimeout(function(){
-		document.querySelector('.Main-Banner').style.backgroundImage = "url('image/img-banner-1.jpeg')";
+		document.querySelector('.Main-Banner').style.backgroundImage = "url('image/img-banner-1.jpg')";
 	}, 3000);
 	
 	//

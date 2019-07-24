@@ -114,6 +114,7 @@ header{
 }
 .social-media i:hover{
 	color: #ffffff;
+	cursor: pointer;
 }
 .top-header .social-media {
 	margin-left: 30px;
@@ -131,6 +132,9 @@ header{
 	margin: 20px 0px;
 	display: inline-block;
 	
+}
+.logo > a{
+	text-decoration: none;
 }
 .logo .construction{
 	color:#ffcb0f;
@@ -204,12 +208,16 @@ header{
 	border-radius: 15px;
 	margin: 70px 30px;
 }
-.btn a{
+.btn{
 	color: #ffffff;
 	text-decoration: none;
 }
-.btn a:hover{
-	color: #222222;
+.btn:hover{
+	color: #7DECE5;
+}
+button:hover{
+	cursor: pointer;
+	background:#4F4A4A;
 }
 .About-Company{
 	width: 1400px;
@@ -414,7 +422,9 @@ header{
 .item5{
 	margin-top: 8px;
 }
-
+.grid-item{
+	cursor:pointer;
+}
 .Customer-reviews{
 	width: 1400px;
 	height: 862px;
@@ -568,8 +578,9 @@ footer .container-footer{
 	border-radius: 30px;
 }
 .items-footer-about ul li img{
-	margin-top:10px;
+	margin:11px  auto;
 }
+
 .items-footer-explor{
 	width: 200px;
 }
@@ -634,6 +645,16 @@ footer .container-footer{
 	font-size: 16px;
 	color: #ffffff;
 	line-height: 1.6;
+}
+.ct-ft2 a{
+	color: #ffffff;
+	text-decoration: none;
+}
+.ct-ft2 li:hover >i{
+	color: #ffcb0f;
+}
+.ct-ft2 li:hover >a{
+	color: #ffcb0f;
 }
 .ct-latest-number{
 	font-size: 18px;
