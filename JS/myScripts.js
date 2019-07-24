@@ -77,7 +77,7 @@ function checkInputForm(){
 			return false;
 		}
 		else{ 
-			if( (/@gmail.com$/.test(email) == false) || (/\s+/.test(email) == true)){// Dang cua email ...@gmail.com
+			if( (/^[a-z][a-z0-9_]{5,32}@[a-z0-9]{2,}(\.[a-z0-9]{2,4})$/).test(email) == false ){ //dang string@string.string
 				alert('Nhap sai email');
 				return false;
 			}
