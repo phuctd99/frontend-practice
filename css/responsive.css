@@ -106,9 +106,10 @@
 		color: #ffffff;
 	}
 	.navigation.open{
-		transform: translate(0px, 54px);
-		transition: transform 1.2s;
 		display: block;
+		transform: translate(0px, 54px);
+		transition: transform 1.2s ease;
+		
 	}
 	.navigation.open #hid{
 		display: none;
@@ -116,9 +117,10 @@
 	.menu_input_form{
 		transform: translate(-500px,90px);
 		position: absolute;
+		display: block;
 	}
 	.menu_input_form.active{
-		display: block;
+		
 		transform: translate(0px,90px);
 		transition: transform 1.2s ease;
 		min-height: 28px;
