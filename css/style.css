@@ -3,7 +3,10 @@
     margin: 0px;
 	box-sizing: border-box;
 }
-
+html{
+	width: 100%;
+	height: 100%;
+}
 .modal {
   display: none;
   position: fixed;
@@ -49,8 +52,9 @@
   border-radius: 3px 0 0 3px;
 }
 .mySlides img{
-	height: 550px;
+	max-height: 550px;
 	text-align: center;
+	height: 100%;
 }
 .numbertext {
   color: #f2f2f2;
@@ -68,7 +72,7 @@
 	font-family: FuturalT-Bold;
 }
 body{
-	width: 1400px;
+	width: 100%;
 	font-family: FuturalT;
 	font-size: 15px;
 	line-height: 1.2;
@@ -76,12 +80,15 @@ body{
 }
 header{
     height: 134px;
-    width: 1400px;
+    width: 100%;
 }
 .container{
-	margin-left: 120px;
-	margin-right: 120px;
+	margin-left: auto;
+	margin-right: auto;
 	height: auto;
+	max-width: 1300px;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 .top-header{
    
@@ -101,7 +108,7 @@ header{
 	margin-right: 15px;
 }
 .top-header .top-contact{
-	width: 600px;
+	
 	height: 42px;
 	display: inline-block;
 	font-family:FuturalT-Book;
@@ -128,10 +135,9 @@ header{
 	margin-top: 10px;
 }
 .logo{
-	width:200px;
 	margin: 20px 0px;
 	display: inline-block;
-	
+	min-width: 190px;
 }
 .logo > a{
 	text-decoration: none;
@@ -148,16 +154,39 @@ header{
 	font-size: 15px;
 	color: rgb(183, 183, 183);
 }
+.menu_bar{
+	display: none;
+	
+}
+#menu:hover{
+	cursor: pointer;
+	border: 1px solid #ffcb0f;
+}
+.header .container{
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+}
+.menu_input_form{
+	padding-left: 10px;
+	outline:none;
+	border-radius: 4px;
+	width: 50%;
+	display: none;
+}
+#searchicon{
+	margin-top: 6px;
+	position: absolute;
+	right: 67px;
+}
 .navigation{
-	display: inline-block;
 	height: 60px;
-	float: right;
 	margin-top: 35px;
 }
 .navigation ul li{
-	margin-left: 30px;
+	margin-left: 25px;
 	list-style: none;
-	float: left;
+	display: inline-block;
 }
 .navigation ul li a:hover{
 	color: #ffcb0f;
@@ -167,10 +196,10 @@ header{
 	color:#ffffff; 
 }
 .Main-Banner{
-	width: 1400px;
-	
-	background-size: 1400px 650px;
+	width: 100%;
+	background-size: 100% 100%;
 	text-align: center;
+	background: center no-repeat;
 }
 .Banner-Content{
 	font-family: FutaralT-Book;
@@ -178,6 +207,7 @@ header{
 	color: white;
 	display: inline-block;
 	margin-top: 100px;
+	width: 100%;
 }
 .bn-first{
 	font-family: FuturalT-Book;
@@ -220,12 +250,12 @@ button:hover{
 	background:#4F4A4A;
 }
 .About-Company{
-	width: 1400px;
-	height: 472px;
+	width: 100%;
+	margin: 20px auto;
 }
 .About-left{
 	display: inline-block;
-	max-width: 550px;
+	max-width: 50%;
 	margin-top: 80px;
 }
 .ct-AC1{
@@ -251,19 +281,19 @@ button:hover{
 }
 .About-right{
 	text-align: center;
-	width: 500px;
 	float: right;
 	display: inline-block;
 	background: url("../image/Layer 2.png");
 }
 .Why-chosse-us{
-	width: 1400px;
-	height: 600px;
+	width: 100%;
 	background: #f2f7fa no-repeat;
+	margin: 40px auto;
 }
 .WCU{
-	
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 .top-WCU{
 	
@@ -272,11 +302,16 @@ button:hover{
 	margin-top: 40px;
 	
 }
-
+.li-wcu{
+	text-decoration: none;
+}
+.li-wcu:hover > p{
+	color: #ffcb0f;
+}
 .col-WCU{
+	max-width: 20%;
 	 text-align: center;
-	margin: 50px 40px;
-	width: 300px;
+	margin: 50px 20px;
 	padding: 0px 0px;
 		
 }
@@ -293,12 +328,20 @@ button:hover{
 	margin-bottom: 20px;
 }
 .Our-services{
-	width: 1400px;
-	height: 690px;
+	width: 100%;
+	margin: 20px auto;
 }
 .OS{
 	display: flex;
-	
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.img-OS{
+	cursor: pointer;
+	transition: transform .5s ease;
+}
+.img-OS:hover{
+	transform: scale(1.05);
 }
 .top-OS{
 	font-family: FuturalT-Bold;
@@ -309,7 +352,9 @@ button:hover{
 	margin-top: 70px;
 }
 .col-OS{
-	margin: 20px ;
+	max-width: 30%;
+	margin: 20px;
+	padding-right: 20px;
 }
 .ct-OS{
 	font-family: FuturalT-Bold;
@@ -322,7 +367,7 @@ button:hover{
 	height: 150px;
 	background: #ffea9f;
 	border-radius: 90px;
-	margin: 30px;
+	margin: 30px auto;
 }
 .circle-two{
 	width: 130px;
@@ -355,10 +400,10 @@ button:hover{
 }
 
 .Made-with-love{
-	width: 1400px;
-	height: 880px;
-	background: url("../image/Layer 3.jpg") no-repeat;
-	
+	width: 100%;
+	background: url("../image/Layer 3.jpg") center no-repeat;
+	margin: 20px auto;
+	height: 120%;
 }
 .top-MWL {
 	padding-top: 60px ;
@@ -374,10 +419,16 @@ button:hover{
 	width: 250px;
 }
 .ct-MWL2{
-	font-family: Futural-Book;
+	font-family: FuturalT-Book;
 	color: #ffffff;
 	text-align: center;
 	font-size: 16px;
+}
+.ct-MWL3{
+	font-family: FuturalT-Book;
+	color: #ffffff;
+	text-align: center;
+	font-size: 18px;
 }
 .MWL{
 	margin: 60px auto;
@@ -401,6 +452,20 @@ button:hover{
 }
 .grid-container {
   display: grid;
+	grid-gap: 8px;
+	grid-template-columns: repeat(auto-fit);
+}
+.grid-container > div > img{
+	width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.grid-container > div > img:hover{
+	transform: scale(1.1);
+	transition: transform 0.5s ease;
+}
+.grid-item{
+	overflow: hidden;
 }
 .item1 {	
   grid-column: 1 ;
@@ -414,34 +479,40 @@ button:hover{
 .item2 {
   grid-column: 2;
   grid-row: 1 ;
-	margin: 0px 8px;
+	
 }
 .item4{
-	margin: 8px;
+	
 }
 .item5{
-	margin-top: 8px;
+	
 }
 .grid-item{
 	cursor:pointer;
 }
 .Customer-reviews{
-	width: 1400px;
-	height: 862px;
-	background: url("../image/Layer 17.jpg") no-repeat;
+	width: 100%;
+	background: url("../image/Layer 17.jpg") center no-repeat;
 }
 .CR{
 	margin: 50px 0px;
 	display: flex;
-	height: 430px;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 .col-CR{
-	width: 350px;
+	max-width: 30%;
 	margin: 20px 0px;
+	overflow: auto;
 }
 .col-CR-mid{
-	width: 350px;
+	max-width: 30%;
+}
+#talk1{
+	overflow: hidden;
+}
+#talk2{
+	overflow: hidden;
 }
 .cr1,
 .cr3{
@@ -476,23 +547,31 @@ button:hover{
 .img-CR{
 	cursor: pointer;
 }
+.img-CR:hover{
+	transform: rotate(360deg);
+	transition: transform 2s ease;
+}
 p.ct-WCU1{
 	cursor: pointer;
 }
+.foot-CR .container{
+	width: 100%;
+}
 .foot-CR{
-	height: 177px;
+	width: 100%;
 	background: #ffcb0f;
 	opacity: 0.9;
+	display:flex;
+	justify-content: space-between;
 }
 .nav{
-	width: 1400px;
-	height: 50px;
+	width: 100%;
+	height: 20px;
 	background: #5d6066;
 }
 .left-foot-CR{
-	width: 550px;
 	margin: 40px 0px;
-	display: inline-block
+	float: left;
 }
 .ct-foot-CR1{
 	font-family: FuturalT-Bold;
@@ -506,10 +585,10 @@ p.ct-WCU1{
 	font-size: 40px;
 }
 .right-foot-CR{
-	width: 600px;
-	display: inline-block;
-	vertical-align:top;
+	
+	
 	margin: 40px 0px;
+	float: right;
 }
 .form-control1{
 	width: 270px;
@@ -535,16 +614,16 @@ p.ct-WCU1{
 	outline: none;
 }
 footer{
-	width: 1400px;
-	height: 400px;
-	background: url("../image/Layer 4.jpg");
+	width: 100%;
+	background: url("../image/Layer 4.jpg") center no-repeat;
+	background-size: 100% 100%;
 }
 footer .container-footer{
 	display: flex;
-	margin-left: 120px;
 	color: #ffffff;
-	padding: 50px 0px;
+	padding-top: 50px;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 .items-footer{
 	width: 350px;
@@ -552,7 +631,7 @@ footer .container-footer{
 }
 
 .nav-last{
-	width: 1400px;
+	width: 100%;
 	height: 60px;
 	text-align: center;
 	background: #1a1c27;
@@ -561,9 +640,10 @@ footer .container-footer{
 }
 .items-footer-about{
 	width: 350px;
+	height: 350px;
 	margin-right: 30px;
 	padding-right: 40px;
-		
+	margin-top: 10px;
 }
 
 .items-footer-about ul li{
@@ -583,6 +663,7 @@ footer .container-footer{
 
 .items-footer-explor{
 	width: 200px;
+	margin-top: 10px;
 }
 .items-footer-explor ul{
 	list-style: none;
@@ -592,6 +673,7 @@ footer .container-footer{
 }
 .items-footer-latest{
 	width: 250px;
+	margin-top: 10px;
 }
 .items-footer-latest ul{
 	list-style:none;
@@ -620,8 +702,8 @@ footer .container-footer{
 	display: inline-block;
 }
 .circle-2{
-	width: 44px;
-	height: 44px;
+	width: 45px;
+	height: 45px;
 	margin: 2px;
 	position: absolute;
 	background: #222222;
@@ -666,15 +748,14 @@ footer .container-footer{
 }
 .ct-ft2 i{
 	margin-right: 20px;
+	margin-top: 20px;
 }
 .items-footer-contact i{
 	margin-right: 20px;
 }
 .items-footer-contact{
 	margin-let: 20px;
-}
-.items-footer-contact p{
-	margin-bottom: 20px;
+	margin-top: 10px;
 }
 .btn-FT{
 	margin: 0px;

@@ -3,6 +3,7 @@
     <head>
         <title>EX3</title>
         <link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/responsive.css">  
 		<meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
@@ -16,7 +17,7 @@
 					<ul>
 						<li><i class="fas fa-mobile-alt"></i>1234 - 5678 - 9012</li>
 						<li><i class="fas fa-envelope"></i>support@Construct.com</li>
-						<li><i class="fas fa-clock"></i>Mon - Sat 9:00 - 19:00</li>
+						<li id='hidden'><i class="fas fa-clock"></i>Mon - Sat 9:00 - 19:00</li>
 					</ul>
 					
 				</div>
@@ -40,6 +41,13 @@
 					<p>Your company Tagline Here</p>
 					</a>
 				</div>
+				  
+				  <div class="menu_bar">
+					  
+				  	<a href="#" id="searchicon"><img alt="" src="image/icon5.png"/></a>
+					  &nbsp;
+					<img id="menu" alt="" src="image/menu.png" />
+				  </div>
 				<div class="navigation">
 					<ul>
 						<li><a href="#">Home</a></li>
@@ -48,9 +56,10 @@
 						<li><a href="#">Portfolio</a></li>
 						<li><a href="#">Component</a></li>
 						<li><a href="#">Contact</a></li>
-						<li><a href="#"><img alt="" src="image/icon5.png"/></a></li>
+						<li id='hid'><a href="#"><img alt="" src="image/icon5.png"/></a></li>
 					</ul>
 				</div>
+				  <input type="text" placeholder="Search" class="menu_input_form"/>
             </div>
 		</div>
         </header>
@@ -96,11 +105,11 @@
 					<div class="circle-one">
 						<div class="circle-two">
 							<div class="circle-three">
-								<div class="circle-four"><img src="image/icon6.png"/></div>
+								<div class="circle-four"><img class="wcu-icon" src="image/icon6.png"/></div>
 							</div>
 						</div>
 					</div>
-					<p class="ct-WCU2">WE DELIVER QUALITY</p>
+					<a class="li-wcu" href="#"><p class="ct-WCU2">WE DELIVER QUALITY</p></a>
 					<p class="ct-basic">Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni</p>
 					
 			  </div>
@@ -112,7 +121,7 @@
 								</div>
 							</div>
 						</div>
-					<p class="ct-WCU2">ALWAYS ON TIME</p>
+					<a class="li-wcu" href="#"><p class="ct-WCU2">ALWAYS ON TIME</p></a>
 					<p class="ct-basic">Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni</p>
 				</div>
 				<div class="col-WCU">
@@ -123,7 +132,7 @@
 							</div>
 						</div>
 					</div>
-					<p class="ct-WCU2">WE ARE PASIONATE</p>
+					<a class="li-wcu" href="#"><p class="ct-WCU2">WE ARE PASIONATE</p></a>
 					<p class="ct-basic">Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni</p>
 				</div>
 				<div class="col-WCU">
@@ -134,7 +143,7 @@
 							</div>
 						</div>
 					</div>
-					<p class="ct-WCU2">PROFESIONAL SERVICES</p>
+					<a class="li-wcu" href="#"><p class="ct-WCU2">PROFESIONAL SERVICES</p></a>
 					<p class="ct-basic">Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni</p>
 				</div>
 				</div>
@@ -145,22 +154,29 @@
 			<p class="top-OS">Our Services</p>
 			<div class="OS">
 				<div class="col-OS">
-					<img src="image/Layer 5.png" alt=""/>
+					
+					<img src="image/Layer 5.png" alt="" class="img-OS"/>
+					<div class="mod-OS">
 					<p class="ct-OS">CONSTRUCTION MANAGEMENT</p>
 					<p class="ct-basic">Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit</p>
 					<a href="#"><button class="btn btn-AC">KNOW MORE</button></a>
+					</div>
 				</div>
 				<div class="col-OS">
-					<img src="image/Layer 6.png" alt=""/>
+					<img src="image/Layer 6.png" alt="" class="img-OS"/>
+					<div class="mod-OS">
 					<p class="ct-OS">REVONATION</p>
 					<p class="ct-basic">Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit</p>
 					<a href="#"><button class="btn btn-AC">KNOW MORE</button></a>
+					</div>
 				</div>
 				<div class="col-OS">
-					<img src="image/Layer 8.png" alt=""/>
+					<img src="image/Layer 8.png" alt="" class="img-OS"/>
+					<div class="mod-OS">
 					<p class="ct-OS">ARCHITECTURE</p>
 					<p class="ct-basic">Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit</p>
 					<a href="#"><button class="btn btn-AC">KNOW MORE</button></a>
+					</div>
 				</div>
 				</div>
 			</div>
@@ -172,11 +188,11 @@
 				<p class="ct-MWL1">MADE WITH LOVE</p>
 				<p class="ct-MWL2">Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit</p>
 				<div class="scrollmenu">
-				  <a href="#">SHOW ALL</a>
-				  <a href="#">BUILDINGS</a>
-				  <a href="#">INTERIOR DESIGN</a>
-				  <a href="#">ISOLATION</a>
-				  <a href="#">PLUMBING</a>
+				  <a href="#" class="ct-MWL3">SHOW ALL</a>
+				  <a href="#" class="ct-MWL3">BUILDINGS</a>
+				  <a href="#" class="ct-MWL3">INTERIOR DESIGN</a>
+				  <a href="#" class="ct-MWL3">ISOLATION</a>
+				  <a href="#" class="ct-MWL3">PLUMBING</a>
 				  
 
 				</div>
@@ -249,7 +265,7 @@
 				<div class="col-CR-mid">
 					<div class="ct-col-CR">
 						<img id="image" src="image/talk2.2.png" alt=""/>
-						<p class="ct-ft2">Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit
+						<p class="ct-ft2" id="talk2">Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit
 						</p>
 					</div>
 					
@@ -272,7 +288,9 @@
 				</div>
 			</div>
 			</div>
-			<div class="foot-CR">
+			
+			</div>
+		<div class="foot-CR">
 				<div class="container">
 				<div class="left-foot-CR">
 					<p class="ct-foot-CR1">DO YOU HAVE ANY QUESTION?</p>
@@ -290,8 +308,6 @@
 				</div>
 					</div>
 				</div>
-			</div>
-		
 		<div class="nav"></div>
 			<footer>
 				<div class="container container-footer">
@@ -385,5 +401,26 @@
 				<p class="ct-nav-last">Copyright @ 2016 | Designed by <span style="color:#ffcb0f">PSDFreebies.com</span></p>
 			</div>
 			<script src="JS/myScripts.js"></script>
+			<script>
+				var menu = document.querySelector('#menu');
+				var main = document.querySelector('body');
+				var drawer = document.querySelector('.navigation');
+				var search = document.querySelector('#searchicon');
+				var input = document.querySelector('.menu_input_form');
+				menu.addEventListener('click', function(e) {
+					drawer.classList.toggle('open');
+					e.stopPropagation();
+				});
+				main.addEventListener('click', function() {
+					drawer.classList.remove('open');
+					
+				});
+				search.addEventListener('click',function(e){
+					input.classList.toggle('active');
+					e.stopPropagation();
+				})
+				
+	
+			</script>
     </body>
 </html>
