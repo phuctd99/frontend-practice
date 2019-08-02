@@ -92,7 +92,8 @@
 		display: list-item;
 		list-style: none;
 		margin: 4px;
-		padding: 8px;
+		padding-top: 15px;
+		padding-left: 10px;
 		border: 1px solid #ffcb0f;
 		background-color: #222533;
 		
